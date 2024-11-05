@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column">
+  
+  <!-- Header -->
+  <header class="p-3">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-0" href="HOME.html">
+          <img src="https://media.instahyre.com/CACHE/images/images/profile/base/employer/48487/78cf3404da/i2e_consulting_logo/45a8938d5154c78b4e73076eddad687b.webp" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          My Site
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="HOME.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="signed-deals.html">Signed Deals</a></li>
+            <li class="nav-item"><a class="nav-link" href="deal-information.html">Deal Information</a></li>
+            <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboards</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link" href="all-news.html">All News</a></li>
+            <li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+          </ul>
+          <a class="btn btn-primary" href="submit-ideas.html">Submit Your Ideas!</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Middle Section -->
+  <main class="content container my-4">
+    <h1>Deal Information</h1>
+
+    <!-- Additional Tabs Below "Deal Information" -->
+    <ul class="nav nav-tabs" id="dealInfoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">WRDM Funding Sources</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Deal Process</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Governance</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">Areas of Interest</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab5-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab" aria-controls="tab5" aria-selected="false">What to do if...</button>
+      </li>
+    </ul>
+    
+    <!-- Tab Content Area -->
+    <div class="tab-content" id="dealInfoTabsContent">
+      <!-- WRDM Funding Sources Content -->
+      <div class="tab-pane fade show active p-3" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+        <h3>WRDM Funding Sources</h3>
+        <p>Details on WRDM funding sources go here...</p>
+      </div>
+      <!-- Deal Process Content -->
+      <div class="tab-pane fade p-3" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+        <h3>Deal Process</h3>
+        <p>Information on the deal process, steps, and key players...</p>
+      </div>
+      <!-- Governance Content -->
+      <div class="tab-pane fade p-3" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+        <h3>Governance</h3>
+        <p>Details on governance structure, decision-making bodies, etc...</p>
+      </div>
+      <!-- Areas of Interest Content -->
+      <div class="tab-pane fade p-3" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+        <h3>Areas of Interest</h3>
+        <p>Focus areas, strategic interests, and potential opportunities...</p>
+      </div>
+      <!-- What to do if... Content with Accordion -->
+      <div class="tab-pane fade p-3" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+        <h3>What to do if...</h3>
+        <p>Select the topic below to see what you should do in each scenario.</p>
+        <div class="accordion mt-3" id="accordionWhatIf">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ...You are at a meeting and find a potential WRD external opportunity of interest
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionWhatIf">
+              <div class="accordion-body">Detailed guidance on what to do in this scenario.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ...You want to know WRD's partnering areas of interest
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionWhatIf">
+              <div class="accordion-body">Information on WRD's areas of interest.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ...you get approached by a non-employee with a potential WRD external opportunity of interest
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionWhatIf">
+              <div class="accordion-body">Guidance on handling approaches from non-employees.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 i2e Inc. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
